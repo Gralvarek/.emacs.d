@@ -6,6 +6,9 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
+ ;; made the window size a little better to deal with
+(when window-system (set-frame-size (selected-frame) 90 48))
+
  ;; smited the tool-bar
 (tool-bar-mode -1)
 
